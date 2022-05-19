@@ -3,3 +3,5 @@ test
 libpystring.la
 pystring.lo
 pystring.o
+
+_rez_build
