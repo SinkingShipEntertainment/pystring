@@ -45,7 +45,7 @@ uuid = "repository.pystring"
 
 # To build/release (since there is Makefile and CMakeLists)
 # rez-build -i -b cmake
-# rez-release -i -b cmake
+# rez-release -b cmake
 
 
 def pre_build_commands():
