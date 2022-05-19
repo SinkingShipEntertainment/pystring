@@ -16,6 +16,7 @@ add_test(NAME PyStringTest COMMAND pystring_test)
 
 include(GNUInstallDirs)
 
+include(GNUInstallDirs)
 install(TARGETS pystring
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
