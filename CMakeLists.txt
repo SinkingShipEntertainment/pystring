@@ -5,6 +5,12 @@ cmake_minimum_required(VERSION 3.12)
 
 project(pystring VERSION 1.1.3 LANGUAGES CXX C)
 
+# We need to compile with -fPIC (Position Independent Code) so that
+# other applications that will link against this one can load this one
+# into their .so
+# Only libraries that are compiled iwth fPIC can be included into other .so libraries.
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # --------------------------------------
 # Build in-tree not allowed
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
