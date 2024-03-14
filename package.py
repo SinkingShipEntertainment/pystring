@@ -54,4 +54,4 @@ def pre_build_commands():
 
 def commands():
     env.PYSTRING_ROOT_DIR = "{root}"
-    env.LIBRARY_PATH.append("{root}/lib")  # pystring is built as static lib, so LIBRARY_PATH
+    env.LD_LIBRARY_PATH.append("{root}/lib64")
